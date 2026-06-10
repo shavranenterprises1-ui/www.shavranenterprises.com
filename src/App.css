@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+    url('/images/hero-bg.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 350px;
+
+  color: white;
+  text-align: center;
+  padding: 40px 15px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: #25d366;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  padding: 50px 20px;
+  text-align: center;
+  color: #333
+}
+
+.section h2 {
+  margin-bottom: 40px;
+  color: #0a1f44;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  color: #0057d9;
+  margin-bottom: 10px;
+}
+
+.contact {
+  background: #0a1f44;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact p {
+  margin: 10px 0;
+}
+
+.brand-logo {
+  width: 120px;
+  height: 70px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.about-section {
+  margin-top: 80px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: 999;
+  transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.gallery-page {
+  padding: 80px 30px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.gallery-page h1 {
+  text-align: center;
+  color: #0a1f44;
+  margin-bottom: 50px;
+  font-size: 42px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.gallery-card {
+  overflow: hidden;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+#contact {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 80px;
+}
+
+#contact h2 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+#contact p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.footer-text {
+  margin-top: 30px;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero {
+    padding: 80px 15px;
+  }
+
+  .whatsapp-float {
+    padding: 10px 15px;
+    font-size: 14px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+}
